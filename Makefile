@@ -1,9 +1,10 @@
 default: graf
 
-graf: graf.c vector.c main.c
+CFLAGS = -Ic-vector/
+graf: graf.c c-vector/vector.c main.c
 
+debug: CFLAGS += -DHAVE_DEBUG -ggdb
 debug: graf 
-debug: CFLAGS = -DHAVE_DEBUG -ggdb
 	
 clean: 
 	rm graf
