@@ -8,6 +8,6 @@ int main()
 		printf("bazdmeg");
 	graph_write(asd);
 
-	//graph_destroy(asd);
+	graph_destroy(asd);
 	return 0;
 }

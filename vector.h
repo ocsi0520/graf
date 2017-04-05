@@ -20,7 +20,7 @@ void* _to_free[]={__VA_ARGS__}; \
 int _length=sizeof(_to_free)/sizeof(_to_free[0]); \
 int i; \
 	for(i=0;i<_length;i++) \
- 		free(_to_free[i]);	\
+ 		free(_VECTOR_START(_to_free[i]));	\
 }
 
 
